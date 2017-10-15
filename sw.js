@@ -9,8 +9,8 @@ self.addEventListener('fetch', function(event) {
 
         var fetchRequest = event.request.clone()
 
-        if (fetchRequest.url == 'http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg') {
-          fetchRequest = new Request('http://cdn3-www.dogtime.com/assets/uploads/gallery/austalian-shepherd-dog-breed-pictures/5-puppy.jpg', { mode: 'no-cors' })
+        if (fetchRequest.url == 'https://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg') {
+          fetchRequest = new Request('https://ghk.h-cdn.co/assets/16/09/980x490/landscape-1457107485-gettyimages-512366437.jpg', { mode: 'no-cors' })
         }
         return fetch(fetchRequest);
       }
